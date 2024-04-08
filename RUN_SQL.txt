@@ -1,2 +1,26 @@
-ALTER TABLE `parivaar_org`.`supplier` 
-CHANGE COLUMN `state` `state` VARCHAR(45) NULL DEFAULT NULL ;
+CREATE TABLE `user` (
+  `userid` varchar(45) NOT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  `first_name` varchar(45) DEFAULT NULL,
+  `middle_name` varchar(45) DEFAULT NULL,
+  `last_name` varchar(45) DEFAULT NULL,
+  `gender` varchar(45) DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `branch` varchar(45) DEFAULT NULL,
+  `department` varchar(45) DEFAULT NULL,
+  `degination` varchar(45) DEFAULT NULL,
+  `permanent_address` varchar(45) DEFAULT NULL,
+  `current_address` varchar(45) DEFAULT NULL,
+  `mailing_address` varchar(45) DEFAULT NULL,
+  `primary_contact` bigint DEFAULT NULL,
+  `secondary_contact` bigint DEFAULT NULL,
+  `pan_no` varchar(45) DEFAULT NULL,
+  `aadhaar_no` varchar(45) DEFAULT NULL,
+  `passport_no` varchar(45) DEFAULT NULL,
+  `role` varchar(45) DEFAULT NULL,
+  `active_status` tinyint DEFAULT NULL,
+  `active_from` date DEFAULT NULL,
+  `active_till` date DEFAULT NULL,
+  `last_login_ts` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`userid`)
+) ;
