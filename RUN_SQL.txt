@@ -24,3 +24,12 @@ CREATE TABLE `user` (
   `last_login_ts` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`userid`)
 ) ;
+
+INSERT INTO `parivaar_org`.`user` 
+(`userid`, `password`, `first_name`, `middle_name`, `last_name`, `gender`, `branch`, `department`,
+ `degination`, `permanent_address`, `current_address`, `mailing_address`, `primary_contact`, 
+ `secondary_contact`, `pan_no`, `aadhaar_no`, `passport_no`, `role`, `active_status`)
+ VALUES 
+ ('user1', 'user', 'John', 'kumar', 'doe', 'male', 'user', 'kolkata', 'supplier',
+ 'ok street', 'ok street', 'ok street', '7539518624', '1523748695', 'akyph3623k',
+ '741586257459', 'M54312', 'admin', '1');
